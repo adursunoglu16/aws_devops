@@ -7,7 +7,7 @@ app = Flask(__name__)
 # Create a function named `home` which uses template file named `index.html` given under `templates` folder, send your name as template variable, and assign it root path ('/')
 @app.route('/')
 def home():
-    return render_template('index.html', name = 'Serdar')
+    return render_template('index.html', name = 'Dursun')
 
 # Write a function named `greet` which uses template file named `greet.html` given under `templates` folder. it takes parameters from query string on URL. assing that parameter to the 'user' variable. If it doesn't have any parameter, warning massage is raised
 @app.route('/greet', methods=["GET"])

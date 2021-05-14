@@ -18,7 +18,7 @@ def calculate():
     if request.method =="POST":
         num1 = request.form.get("number1")
         num2 = request.form.get("number2")
-        return render_template("result.html", variable1 = num1, variable2 = num2, least = lcm(int(num1),int(num2)), developer_name = "Serdar")
+        return render_template("result.html", variable1 = num1, variable2 = num2, least = lcm(int(num1),int(num2)), developer_name = "Dursun")
     else:
         return render_template("result.html")
 
