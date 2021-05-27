@@ -75,7 +75,7 @@ MYSQL/Aurora(3306)  ----> aws_capstone_EC2_Sec_Group
 
 4. NAT Instance Security Group
 Name            : aws_capstone_NAT_Sec_Group
-Description     : ALB Security Group allows traffic HTTP and HTTPS and SSH ports from anywhere 
+Description     : NAT Security Group allows traffic HTTP and HTTPS and SSH ports from anywhere 
 Inbound Rules
 VPC             : AWS_Capstone_VPC
 HTTP(80)    ----> anywhere
@@ -248,6 +248,7 @@ Advance Details:
     - Termination protection        : Enable
     - User Data
 #!/bin/bash
+
 apt-get update -y
 apt-get install git -y
 apt-get install python3 -y
