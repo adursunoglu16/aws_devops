@@ -114,3 +114,13 @@
 ## Resources:
 
 - [AWS Provider/Terraform](https://registry.terraform.io/providers/hashicorp/aws/latest/docs)
+
+# AWS'de EC2 launch ettik ve sonrasinda terraform kuruyoruz ona:
+sudo yum update -y
+sudo yum install -y yum-utils
+sudo yum-config-manager --add-repo https://rpm.releases.hashicorp.com/AmazonLinux/hashicorp.repo
+cd /etc/yum.repos.d
+ls
+go to home dir again and install terraform
+sudo yum -y install terraform
+
